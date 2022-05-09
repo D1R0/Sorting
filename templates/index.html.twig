@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Take Off Labs
+{% endblock %}
+{% block body %}
+<div class="d-flex justify-content-center">
+<div class="d-row text-center">
+	<h1>Sort system</h1>
+	<br>
+	<div class="indexContainer">
+		<label for="index">The number of people</label>
+		<input type="number" class="form-control numberOfPersons" name="index">
+		<button class="btn btn-dark mx-auto my-1 indexSubmit">Submit</button>
+	</div>
+	<div class="listInputsContainer d-none">
+		<div class="listInputs"></div>
+		<button class="generateButton btn btn-dark my-1">Generate</button>
+		<button class="backButton btn btn-dark my-1"> Back</button>	
+		<div class="output">
+
+		</div>
+	</div>
+
+</div>
+</div>
+{% endblock %}
